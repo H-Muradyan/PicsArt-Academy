@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+table{
+    margin: 8% auto;
+}
+table .row1{
+    color: red;
+}
+
+table, th, td {
+    border: 1px solid black;
+    font-size: 20px;
+}

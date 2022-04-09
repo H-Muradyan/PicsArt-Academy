@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.title{
+    text-align: center;
+    margin: 25px 0px;
+    text-shadow: 3px 3px 0px #b7dc52c7;
+}
+.container{
+    background-color: #b7dc5271;
+    display: flex;
+    justify-content: center;
+}
+.container .text {
+    margin-left: 50px;
+}
+.container .picture img{
+    width: 400px;
+    height: 450px;
+    box-shadow: 2px 2px 20px 10px #b7dc52c0;
+}
+h2{
+    margin: 10px 0px;
+    text-align: center;
+}
+.text .info{
+    list-style-type: none;
+    line-height: 25px;
+}
+.text .topMusics{
+    line-height: 25px;
+    margin-left: 15px;
+}
+.moreInfo{
+    text-align: end;
+    font-size: 20px;
+    color: #B7DC52;
+}
+
