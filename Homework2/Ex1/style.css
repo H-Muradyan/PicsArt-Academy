@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 50px;
+}
+header img{
+    width: 150px;
+}
+header nav ul{
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+main div{
+    margin: 15px;
+    display: flex;
+}
+.filmName{
+    text-align: center;
+    color: rgb(43, 2, 77);
+}
+main div img{
+    height: 450px;
+    margin-top: 40px;
+}
+main div section{
+    margin-left: 20px;
+    margin-top: 27px;
+}
+article{
+    margin-top: 20px;
+}
+.gender, .dob{
+    margin: 0 10px
+}
+.signUp{
+    display: flex;
+    flex-direction: column;
+}
+.signUp .text input{
+    padding: 10px;
+}
+.signUp .chooseInput span{
+    font-weight: 900;
+}
+.signUp .clear{
+    margin-left: 20px;
+}
+
