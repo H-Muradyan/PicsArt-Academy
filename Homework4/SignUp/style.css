@@ -1,0 +1,53 @@
+
+#videoContainer .formContainer{
+    margin: 110px auto;
+    height: 520px;
+    width: 422px;
+    background-color: white;
+    border-radius: 5px;
+}
+.formContainer form{
+    display: flex;
+    flex-direction: column;
+    padding: 16px
+}
+.formContainer input{
+    padding: 11px;
+    border-radius: 5px;
+    background-color: #F5F6F7;
+    border: 1px solid #CCD0D5;
+}
+.formContainer input, p, .gender, hr{
+    margin-bottom: 10px;
+}
+.date{
+    padding: 8px 71px 7px 8px;
+    border-radius: 5px;
+    border: 1px solid #CCD0D5;
+    margin-bottom: 10px;
+}
+.infoText{
+    font-size: 12px;
+}
+.formContainer .gender{
+    margin-top: 9px;
+}
+.formContainer .gender label{
+    padding: 8px 4px 6px 8px;
+    border-radius: 5px;
+    border: 1px solid #CCD0D5;
+}
+.formContainer .gender label input{
+    margin-left: 53px;
+}
+.formContainer .submitButton{
+    background-color: #00A400;
+    color: white;
+    margin: 0px 90px;
+    border-radius: 5px;
+    font-weight: 900;
+}
+p, span{
+    color: #606770;
+}
+

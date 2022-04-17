@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logoContainer">
+            <a href="#videoContainer"><img src="../Icons/home.png" alt="icon" width="50px"> </a>
+        </div>
+        <nav>
+            <a href="../SignUp/index.html"><input class="signUp" type="button" name="signUp" value="Sign Up"></a>
+            <a href="../SignIn/index.html"><input class="signIn" type="button" name="signIn" value="Sign In"></a>
+        </nav>
+    </header>
+    <main>
+        <section id="videoContainer">
+            <video autoplay loop muted>
+                <source src="../Video/carVideo.mp4" type="video/mp4">
+            </video>
+            <div class="text">
+                <h1>Choose your favorite car</h1>
+                <div>
+                    <div class="music">
+                        <a href="#carTypes"><img src="../Icons/down-arrow.png" alt="icon" width="90px"></a>
+                        <audio controls>
+                            <source src="../music/Lemon Tears x Triplo Max-YDFTS.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="carTypes">
+            <h2 class="carTypesText">Car types</h2>
+            <div class="pictures">
+                <figure>
+                    <img src="../imgs/car1.jpg" alt="picture">
+                    <h3>$ 350000</h3>
+                    <figcaption>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas aut pariatur quis, dolor soluta exercitationem.</figcaption>
+                  </figure>
+                  <figure>
+                    <img src="../imgs/car2.jpg" alt="picture">
+                    <h3>$ 350000</h3>
+                    <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ut amet culpa voluptas inventore natus?</figcaption>
+                  </figure>
+                  <figure>
+                    <img src="../imgs/car3.jpg" alt="picture">
+                    <h3>$ 350000</h3>
+                    <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil neque blanditiis suscipit enim fuga autem.</figcaption>
+                  </figure>
+            </div>
+        </section>
+        <section class="rollsInfo">
+            <img src="../imgs/car4.jpg" alt="picture">
+            <div class="rollsText">
+                <h2>Rolls-Royce Ghost</h2>
+                <p>The Rolls-Royce Ghost is a full-sized luxury car manufactured by Rolls-Royce Motor Cars. The "Ghost" nameplate, named in honour of the Silver Ghost, a car first produced in 1906, was announced in April 2009 at the Auto Shanghai show. The production model was officially unveiled at the 2009 Frankfurt Motor Show. The Ghost Extended Wheelbase was introduced in 2011. During development, the Ghost was known as the "RR04". It was designed as a smaller, "more measured, more realistic car" than the Phantom, aiming for a lower price category for Rolls-Royce models.
+                According to a statement by BMW AG, this generation of automobile, with an internal combustion engine, is to be produced until 2030, at which point the company intends to manufacture electric models only.[2]</p>
+                <a href="https://en.wikipedia.org/wiki/Rolls-Royce_Ghost" target="_blank"><button>More Info</button></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footerContainer1">
+            <ul>
+                <a href="#videoContainer"><li>Home</li></a>
+                <a href="#carTypes"><li>Car types</li></a>
+                <a href="https://en.wikipedia.org/wiki/Rolls-Royce_Ghost"><li>Contact us</li></a>
+                <a href="https://en.wikipedia.org/wiki/Rolls-Royce_Ghost" target="_blank"><li>About</li></a>
+            </ul>
+        </div>
+        <div class="footerContainer2">
+            <ul>
+                <div>
+                    <li><b>Mon - Thurs: </b> <i>8AM - 5:30 PM</i></li>
+                    <li><b>Fri: </b> <i>8AM - 12 PM | 2 PM - 5 PM</i></li>
+                    <li><b>Sat: </b> <i>8AM - 13:30 PM</i></li>
+                    <li><b>Sun: </b> <i>Closed</i></li>
+                </div>
+                <div>
+                    <li><b>Address: </b> <i>30 Baghramyav ave, Yerevan RA</i></li>
+                    <li><b>Call us: </b> <i>37499000000</i></li>
+                </div>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
