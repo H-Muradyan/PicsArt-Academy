@@ -27,12 +27,12 @@
                     <p>It's quick and easy.</p>
                     <hr> 
                     <div class="fullName">
-                        <input class="name" type="text" placeholder="Name">
-                        <input class="surName" type="text" placeholder="Surname">
+                        <input class="name" type="text" placeholder="Name" required>
+                        <input class="surName" type="text" placeholder="Surname" required>
                     </div>
-                    <input type="email" placeholder="email">
-                    <input type="password" placeholder="password">
-                    <input type="password" placeholder="Confirm password">
+                    <input type="email" placeholder="email" required>
+                    <input type="password" placeholder="password" required>
+                    <input type="password" placeholder="Confirm password" required>
                     <span>Birthday <img src="../Icons/question.png" width="12px"></span>
                     <div>
                         <select name="birthday_month" id="month" title="Month" class="date">
@@ -88,13 +88,13 @@
                     </div>
                     <span>Gender <img src="../Icons/question.png" width="12px"></span>
                     <div class="gender">
-                        <label>Female <input type="radio" name="gender"></label>
-                        <label>Male <input type="radio" name="gender"></label>
-                        <label>Custom <input type="radio" name="gender"></label>
+                        <label>Female <input type="radio" name="gender" required></label>
+                        <label>Male <input type="radio" name="gender" required></label>
+                        <label>Custom <input type="radio" name="gender" required></label>
                     </div>
                     <p class="infoText">By clicking Sign Up, you agree to our <a href="#">Terms,</a><a href="#">Data Policy</a> and <a href="#">Cookie Policy.</a>You may receive SMS notifications from us and can opt out at any time.
                     </p>
-                    <input class="submitButton" type="button" value="Sign Up">
+                    <input class="submitButton" type="submit" value="Sign Up" required>
                 </form>
             </div>
         </section>
