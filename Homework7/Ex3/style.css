@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.parent{
+    position: relative;
+    width: 600px;
+    height: 500px;
+    background-color: #FFC0CB;
+    margin: 50px auto;
+    border: 2px solid black;
+    text-align: center;
+
+}
+.child{
+    position: relative;
+    top: 120px;
+    width: 500px;
+    height: 300px;
+    background-color: green;
+    border: 2px solid black;
+    margin: 0 auto;
+}
+.element{
+    position: relative;
+    top: 70px;
+    width: 400px;
+    height: 160px;
+    background-color: yellow;
+    border: 2px solid black;
+    margin: 0 auto;
+    line-height: 160px;
+}
+p{
+    font-size: 28px;
+    margin: unset;
+}
+.text{
+    position: relative;
+    top: 17%;
+}
