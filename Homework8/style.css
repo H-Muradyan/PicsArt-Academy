@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header img:first-child{
+    cursor: pointer;
+    background-color: rgba(57, 214, 238);
+}
+
+.container{
+    background-image: url('https://cdn-addjh.nitrocdn.com/BzukxzxIDWSkBjOuXIuFVkjjEriFmqlw/assets/static/optimized/rev-83cdbad/wp-content/uploads/2018/10/animal-bottlenose-dolphin-close-up-64219-1-1-768x512.jpg');
+    background-position: center;
+    background-color: rgb(148, 210, 240);
+    margin: 0 auto;
+    width: 450px;
+    height: 550px;
+    border: 1px solid black;
+}
+
+header{
+    background-color: rgba(14, 16, 144, 0.453);
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    align-items: center;
+}
+
+nav :nth-child(n + 2){
+    color: rgb(190, 241, 25);
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+nav :nth-child(1){
+    color: rgb(190, 241, 25);
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container img:nth-child(1):hover {
+    opacity: .5;
+    box-shadow: 3px 5px 25px 5px rgb(35, 35, 37);
+    transform: scale(50px);
+}
+nav>div:hover{
+    text-shadow: 1px 4px 3px rgb(210, 25, 25);
+}
+.pictures{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.pictures *:nth-child(n + 1){
+    box-shadow: 5px 5px 30px 10px black;
+    cursor: pointer;
+}
+.pictures *:nth-child(n):hover{
+    opacity: .6;
+}
+.texts{
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+.texts p:nth-child(n){
+    font-size: 17px;
+}
+.texts *:nth-child(2n + 2){
+    color: yellow;
+}
+.texts .title{
+    color: white;
+    margin-bottom: 15px;
+}
+.texts *:nth-child(2n + 3){
+    color: rgb(253, 115, 10);
+}
+
