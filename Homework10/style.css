@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    padding: 50px 250px;
+    background-image: linear-gradient(to left top, rgb(16, 229, 215) , rgb(104, 18, 201));
+}
+table{
+    cursor: pointer;  
+    border-collapse: collapse;
+}
+td{
+    width: 220px;
+
+    border: 5px solid rgb(13, 245, 13);
+}
+tr{
+    height: 180px;
+
+}
+.box1{
+    transition-duration: .5s;
+    background-image: radial-gradient(closest-side at 50% 50%, rgb(131, 245, 17), rgb(0, 68, 255), rgb(255, 17, 156));
+}
+.box1:hover{
+    border-radius: 50%;
+}
+.box2{
+    background-image: url('https://images.unsplash.com/photo-1511919884226-fd3cad34687c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y2FyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(100%);
+}
+.box2:hover{
+    filter: contrast(200%);
+}
+.box3{
+    background-image: repeating-linear-gradient(rgb(0, 174, 255),rgb(255, 0, 255) ,rgb(146, 20, 20) );
+}
+.box3:hover{
+    border-radius: 50%;
+    background-image: repeating-linear-gradient(rgb(12, 31, 40),rgb(0, 174, 255)7% ,rgb(214, 126, 3) 25%);
+}
+.box4{
+    background-image: url('https://media.istockphoto.com/photos/manhattan-panorama-with-its-skyscrapers-illuminated-at-dusk-new-york-picture-id538811669?b=1&k=20&m=538811669&s=170667a&w=0&h=Z_nBn58GNBa_kjUBlzniEehEk1GPOCz9H5u50z0qKdU=');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(5px);
+    transition-duration: 1s;
+}
+.box4:hover{
+    filter: none;
+}
+.box5{
+    transition-duration: .5s;
+    border-radius: 50%;
+    background-image: conic-gradient(rgb(255, 179, 0) 5%, rgb(111, 255, 0) 15%, rgb(0, 124, 128) 70%, rgb(157, 0, 255) 10%);
+}
+.box5:hover{    
+    border-radius: 0%;
+}
+.box6{
+    background-image: url('https://images.unsplash.com/photo-1509316785289-025f5b846b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZGVzZXJ0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: invert(100%);
+}
+.box6:hover{
+    filter: hue-rotate(90deg);
+}
+.box7 div{
+    width: 30px;
+    height: 30px;
+    background: black;
+    top: -80px;
+    position: relative;
+    animation: mymove 3s infinite;
+}
+@keyframes mymove {
+    0%   {top: -73px; left: 0px; background: rgb(98, 19, 19);}
+    25%  {top: -73px; left: 185px; background: rgb(20, 20, 24);}
+    50%  {top: 72px; left: 185px; background: rgb(238, 227, 12);}
+    75%  {top: 72px; left: 0px; background: rgb(226, 13, 13);}
+    100% {top: -73px; left: 0px; background: rgb(223, 129, 15);}
+}
+.box8 p{
+    white-space: nowrap; 
+    width: 150px; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    border: 1px solid #f08204;
+    color: white;
+}
+.box8 p:hover{
+    word-break: break-all;
+    white-space: initial; 
+}
+.box9{
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+.box9 .text{
+
+    writing-mode: vertical-rl;
+}
+
