@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 768px;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  text-align: center;
+  color: white;
+  font-size: 32px;
+}
+.container div {
+  padding: 70px;
+}
+.container .item1 {
+  background-color: #4dbede;
+  grid-column: 1 / 3;
+}
+.container .item2 {
+  background-color: #adb4e9;
+}
+.container .item3 {
+  background-color: #de7bdb;
+}
+.container .item4 {
+  background-color: #ed76ce;
+  grid-column: 1 / 3;
+}

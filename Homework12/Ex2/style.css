@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 400px;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px 10px;
+}
+.container div{
+    padding: 40px 10px;
+    background-color: orange;
+    border: 1px solid black;
+    border-radius: 5px;
+}

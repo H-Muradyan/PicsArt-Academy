@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 400px;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  color: black;
+}
+
+header {
+  background-color: orange;
+  grid-column: 1 / 5;
+  padding: 30px;
+  border-radius: 5px;
+}
+main {
+  background-color: blue;
+  grid-column: 1 / 3;
+  padding: 30px;
+  border-radius: 5px;
+}
+.empaty {
+  padding: 30px;
+  border-radius: 5px;
+}
+.sidebar {
+  background-color: brown;
+  padding: 30px;
+  border-radius: 5px;
+}
+footer {
+  background-color: green;
+  grid-column: 1 / 5;
+  padding: 30px;
+  border-radius: 5px;
+}
