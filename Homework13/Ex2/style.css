@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container header {
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+  background-color: #111111;
+  margin-right: 20px;
+}
+
+.container header nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.container header nav li {
+  color: #818181;
+  font-size: 1.3rem;
+  list-style-type: none;
+  margin-left: 10px;
+}
+
+.container main {
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+}
+
+.container main p {
+  font-size: 28px;
+}
+/*# sourceMappingURL=style.css.map */

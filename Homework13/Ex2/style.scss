@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    header{
+        flex-basis: 15%;
+        background-color: #111111;
+        margin-right: 20px;
+        nav{
+            div{
+                display: flex;
+                margin-top: 15px;
+                margin-left: 15px;
+            }
+            li{
+                color: #818181;
+                font-size: 1.3rem;
+                list-style-type: none;
+                margin-left: 10px;
+            }
+        }
+    }
+    main{
+        flex-basis: 80%;
+        p{
+            font-size: 28px;
+        }
+    }
+}

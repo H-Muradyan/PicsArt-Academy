@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin flexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin iconStyle($bgColor) {
+  background-color: $bgColor;
+  width: 70px;
+  height: 80px;
+}
+
+.container {
+  display: flex;
+  height: 200vh;
+  .stickySection {
+    margin-right: 20px;
+    ul {
+      position: sticky;
+      top: 0;
+      li {
+        @include flexCenter();
+      }
+      .fb {
+        @include iconStyle(#3f5997);
+      }
+      .twitter {
+        @include iconStyle(#7aacee);
+      }
+      .g {
+        @include iconStyle(#c94a39);
+      }
+      .linkedin {
+        @include iconStyle(#577bb5);
+      }
+      .youtube {
+        @include iconStyle(#bb1400);
+      }
+    }
+  }
+  .text {
+    p {
+      font-size: 28px;
+    }
+  }
+}

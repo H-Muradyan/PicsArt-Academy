@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin flex($justCont, $alignItem) {
+    display: flex;
+    justify-content: $justCont;
+    align-items: $alignItem;
+  }
+
+header{
+    background-color: #F1F1F1;
+    @include flex(space-between, center);
+    padding: 30px 30px;
+    ul{
+        @include flex(space-between, center);
+        list-style-type: none;
+        width: 220px;
+        font-size: 20px;
+        li{
+            padding: 20px 10px;
+            border-radius: 5px;
+        }
+        :hover{
+            background-color: #6991FF;
+            cursor: pointer;
+            color: white;
+        }
+    }
+}

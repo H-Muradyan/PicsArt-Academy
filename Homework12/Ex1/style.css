@@ -4,8 +4,7 @@
   box-sizing: border-box;
 }
 .container {
-  width: 1024px;
-  margin: 100px auto;
+  width: 600px;
   display: grid;
   grid-template-columns: repeat(12, 8.3%);
   grid-template-rows: repeat(5, 1fr);
