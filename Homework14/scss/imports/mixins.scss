@@ -1,0 +1,13 @@
+@mixin flexCenter($justofy:true) {
+    display: flex;
+    align-items: center;
+    @if $justofy {
+        justify-content: center;
+    }
+}
+
+@mixin durationsPositions() {
+    position: absolute;
+    top: 18px;
+    pointer-events: none;
+}

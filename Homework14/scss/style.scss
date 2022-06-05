@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import "./imports/variebles";
+@import "./imports/global.scss";
+@import "./imports/mixins.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $ubuntu;
+  padding: 70px;
+}
+
+.pricing-table-container {
+  .pricing-header {
+    @include flexCenter;
+    flex-wrap: wrap;
+    h2 {
+      min-width: 200px;
+      margin-right: 32px;
+    }
+    .plan-switch-container {
+      position: relative;
+      color: $white;
+      display: inline-block;
+      .plans-switch {
+        width: 250px;
+        height: 55px;
+        background: $sitch-bg;
+        appearance: none;
+        border-radius: 28px;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          height: 44px;
+          width: 120px;
+          border-radius: 24px;
+          background: $green;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 6px;
+          transition: all 0.5s;
+        }
+      }
+      .monthly {
+        @include durationsPositions();
+        left: 36px;
+      }
+      .yearly {
+        @include durationsPositions();
+        right: 36px;
+      }
+    }
+  }
+  .pricing-table {
+    @include flexCenter;
+    flex-wrap: wrap;
+    margin-top: 32px;
+    .table {
+      background: $table-bg;
+      min-width: 300px;
+      width: 300px;
+      padding: 32px;
+      position: relative;
+      background-image: url("../imgs/bg-shape1.svg");
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: contain;
+
+      &.best-value {
+        padding-top: 70px;
+        border-radius: 24px;
+        background-color: #001e2d;
+        overflow: hidden;
+        color: $white;
+        .value {
+          background-color: $deepPink;
+          color: $white;
+          position: absolute;
+          width: 100%;
+          top: 0;
+          left: 0;
+          text-align: center;
+          padding: 10px;
+          font-size: 20px;
+        }
+        .btn {
+          background: #ffd166;
+          color: #222;
+          &:hover {
+            background: #f0b11c;
+          }
+        }
+      }
+      .btn {
+        background: $sitch-bg;
+        padding: 16px 0;
+        display: inline-block;
+        width: 100%;
+        color: $white;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 24px;
+        margin-top: 16px;
+        transition: all 400ms;
+
+        &:hover {
+          background: #29769c;
+        }
+      }
+      .contanet {
+        .price-container {
+          display: flex;
+          align-items: center;
+          margin-bottom: 20px;
+        }
+        h3 {
+          font-size: 24px;
+          margin-bottom: 15px;
+        }
+        .price {
+          font-size: 50px;
+          font-weight: bold;
+          padding-right: 16px;
+        }
+        .description {
+          font-size: 15px;
+          margin-bottom: 20px;
+        }
+        .features {
+          list-style: none;
+          padding: 0;
+
+          li {
+            margin: 4px 0;
+            @include flexCenter($justofy: false);
+            &::before {
+              content: url(../imgs/check-icon.svg);
+              margin-right: 16px;
+              margin-top: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .table {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .plan-switch-container {
+    margin-top: 30px;
+  }
+  h2 {
+    margin-left: 50px;
+    text-align: center;
+  }
+}
