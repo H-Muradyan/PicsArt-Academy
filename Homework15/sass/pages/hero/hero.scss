@@ -1,0 +1,106 @@
+@import "../../abstracts/mixin.scss";
+
+.hero {
+  padding: 0px 16px;
+  &__container {
+    max-width: 1400px;
+    margin: 0 auto;
+    &__title {
+      color: #343d33;
+      font-size: 34px;
+      font-weight: 400;
+      text-align: center;
+      line-height: 110%;
+      width: 316px;
+      margin: 26px auto 16px auto;
+    }
+    &__text {
+      font-weight: 300;
+      color: #414840;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 150%;
+      text-align: center;
+      width: 343px;
+      margin: 0 auto;
+    }
+    &__btns {
+      text-align: center;
+      margin-top: 39px;
+      margin-bottom: 75px;
+      a:nth-child(1) {
+        @include btnStyle(17px 30px, none, #475f45, #ffffff);
+      }
+      a:nth-child(2) {
+        @include btnStyle(15px 30px, 2px solid #475f45, transparent, #475f45);
+      }
+    }
+    img {
+      display: flex;
+      margin: 0 auto;
+      width: 254px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    &__container {
+      &__title {
+        font-size: 45px;
+        width: 458px;
+        margin-top: 56px;
+      }
+      &__text {
+        font-size: 22px;
+        width: 471px;
+        margin-top: 24px;
+        margin-bottom: 55px;
+      }
+      &__btns {
+        a:nth-child(1) {
+          padding: 22px 40px;
+        }
+        a:nth-child(2) {
+          padding: 20px 40px;
+        }
+      }
+      img {
+        width: 378px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    padding: 0px 100px;
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 56px;
+      &__title {
+        text-align: start;
+        font-size: 57px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 100%;
+        max-width: 528px;
+      }
+      &__text {
+        text-align: start;
+        width: 100%;
+        max-width: 478px;
+        margin: unset;
+      }
+      &__btns {
+        text-align: start;
+        min-width: 440px;
+      }
+      img {
+        width: 459px;
+        margin: unset;
+      }
+    }
+  }
+}

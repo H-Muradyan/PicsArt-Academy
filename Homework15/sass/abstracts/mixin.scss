@@ -1,0 +1,12 @@
+@mixin btnStyle($padding, $border, $bgColor, $color) {
+  text-decoration: none;
+  border: $border;
+  padding: $padding;
+  background-color: $bgColor;
+  color: $color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}

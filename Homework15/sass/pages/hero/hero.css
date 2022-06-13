@@ -1,0 +1,132 @@
+.hero {
+  padding: 0px 16px;
+}
+
+.hero__container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.hero__container__title {
+  color: #343d33;
+  font-size: 34px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 110%;
+  width: 316px;
+  margin: 26px auto 16px auto;
+}
+
+.hero__container__text {
+  font-weight: 300;
+  color: #414840;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  width: 343px;
+  margin: 0 auto;
+}
+
+.hero__container__btns {
+  text-align: center;
+  margin-top: 39px;
+  margin-bottom: 75px;
+}
+
+.hero__container__btns a:nth-child(1) {
+  text-decoration: none;
+  border: none;
+  padding: 17px 30px;
+  background-color: #475f45;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.hero__container__btns a:nth-child(2) {
+  text-decoration: none;
+  border: 2px solid #475f45;
+  padding: 15px 30px;
+  background-color: transparent;
+  color: #475f45;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.hero__container img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 254px;
+}
+
+@media (min-width: 768px) {
+  .hero__container__title {
+    font-size: 45px;
+    width: 458px;
+    margin-top: 56px;
+  }
+  .hero__container__text {
+    font-size: 22px;
+    width: 471px;
+    margin-top: 24px;
+    margin-bottom: 55px;
+  }
+  .hero__container__btns a:nth-child(1) {
+    padding: 22px 40px;
+  }
+  .hero__container__btns a:nth-child(2) {
+    padding: 20px 40px;
+  }
+  .hero__container img {
+    width: 378px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    padding: 0px 100px;
+  }
+  .hero__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 56px;
+  }
+  .hero__container__title {
+    text-align: start;
+    font-size: 57px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    max-width: 528px;
+  }
+  .hero__container__text {
+    text-align: start;
+    width: 100%;
+    max-width: 478px;
+    margin: unset;
+  }
+  .hero__container__btns {
+    text-align: start;
+    min-width: 440px;
+  }
+  .hero__container img {
+    width: 459px;
+    margin: unset;
+  }
+}
+/*# sourceMappingURL=hero.css.map */

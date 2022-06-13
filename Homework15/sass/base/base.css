@@ -1,0 +1,17 @@
+*,
+*::before,
+::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  font-family: "Libre Baskerville";
+}
+
+p, a {
+  font-family: 'Roboto';
+}
+/*# sourceMappingURL=base.css.map */
