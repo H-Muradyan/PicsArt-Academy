@@ -3,9 +3,6 @@ function weeklySalary(hoursList) {
   let saturday = hoursList.length - 2;
   let sum = 0;
   for (let i = 0; i < hoursList.length; i++) {
-    if (hoursList[i] < 0) {
-      return "Every element in the array must be greater than or equal to 0";
-    }
     hoursList[i] > 8
       ? (sum +=
           (8 * 10 + (hoursList[i] - 8) * 15) *
