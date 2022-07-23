@@ -1,9 +1,16 @@
 function isHappy(number) {
-  let sum = 1;
-  for (let num of String(number)) {
-    sum *= Math.pow(num, 2);
+  let sum = 0;
+  while (number > 0) {
+    let digit = number % 10;
+    number = Math.trunc(number / 10);
+    sum += digit * digit;
   }
-  return String(sum).length >= 4 ? false : true;
+  if (sum === 1) {
+    return true;
+  } else if (sum > 1 && sum <= 4) {
+    return false;
+  }
+  return isHappy(sum);
 }
 
 console.log(isHappy(67));
