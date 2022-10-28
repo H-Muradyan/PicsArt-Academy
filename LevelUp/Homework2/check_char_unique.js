@@ -14,4 +14,4 @@ function checkCharUnique(str) {
   return true;
 }
 
-console.log(checkCharUnique(""));
+console.log(checkCharUnique("hello"));
